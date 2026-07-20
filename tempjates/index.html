@@ -4,19 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
 
+    <style>
+
+          /*селектор по тегу*/
+       h6
+       {
+           font-size: 15px;
+       }
+     /*селектор по классу, для класса h2-text применить стиль*/
+    .h2-text {
+        color: red
+    }
+    </style>
+
+</head>
 <body>
 
 <div>
-    <h1>H1</h1>
-    <p>Это просто текст</p>
-</div>
+    <!-- Идентификатор д/б уникален и нужен для поиска и управления поиск в Elements по #h1-text-->
+    <h1 id="h1-text">H1</h1>
+    <!--  поиска и управления поиск в Elements по .h2-text-->
+    <h2 class="h2-text">H2 text</h2>
 
-<a href="https://example.com" target="_blank">Перейти на сайт</a>
-<img src="https://w7.pngwing.com/pngs/291/415/png-transparent-whiskers-tom-and-jerry-
+      <!-- Обращать внимание на  span изза него может падать автотесты так как он воспринимается как текст-->
+    <p>Это просто текст. <span style="color: green">Это зеленый текст</span> Это просто текст</p>
+
+    <a href="https://example.com" target="_blank">Перейти на сайт</a>
+
+    <img src="https://w7.pngwing.com/pngs/291/415/png-transparent-whiskers-tom-and-jerry-
 cartoon-tom-and-jerry-mammal-cat-like-mammal-heroes-thumbnail.png" alt="Описание изображения мыш" style="width: 250px">
+
+    <!-- Ненумерованный Unordered List-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Нумерованный Ordered List-->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <form action="/action" method="post">
+        <!-- Поле ввода -->
+        <input type="text" value="1234" placeholder="Введите имя">
+        <!-- Поле ввода обязательно без него не отправится вся форма -->
+        <input required type="email" placeholder="email">
+        <input type="password" placeholder="password">
+
+        <textarea placeholder="Введите имя">1234</textarea>
+        <button type="submit">submit</button>
+
+    </form>
+
+    <table>
+        <!-- Шапка -->
+        <thead>
+        <!-- Строка table row -->
+        <tr>
+            <!-- ячейка  -->
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <!-- ячейка  -->
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+        </tr>
+
+        <tr>
+            <!-- ячейка  -->
+            <td>Item 4</td>
+            <td>Item 5</td>
+            <td>Item 6</td>
+        </tr>
+        </tbody>
+
+
+    </table>
+
+
+</div>
 </body>
-
-
 </html>
